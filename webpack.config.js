@@ -17,8 +17,27 @@ module.exports = {
               options: { presets: ["@babel/env"] }
           },
           {
-            test: /\.css$/,
-            use: ["style-loader", "css-loader"]
+            test: /\.(css|scss)$/,
+            use: [
+              {
+                loader: "style-loader"
+              },
+              {
+                loader: "css-loader",
+                options: {
+                  discardDuplicates: true,
+                  importLoaders: 1,
+                  modules: true,
+                  localIdentName: "[name]__[local]___[hash:base64:5]"
+                }
+              },
+              {
+                loader: 'sass-loader',
+                options: {
+                  sourceMap: true,
+                },
+              },
+            ]
           }
       ]
   },
