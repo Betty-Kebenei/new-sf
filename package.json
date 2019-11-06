@@ -5,7 +5,9 @@
   "main": "index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development --open --hot"
+    "start": "webpack-dev-server --mode development --open --hot",
+    "lint": "eslint src -c .eslintrc --ext js,jsx",
+    "check-staged": "lint-staged"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +18,16 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
     "node-sass": "^4.13.0",
+    "prettier": "^1.18.2",
     "sass-loader": "^8.0.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.41.2",
@@ -26,5 +37,18 @@
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint"
+    ],
+    "*.{js,jsx,json,md}": [
+      "prettier --list-different"
+    ]
   }
 }
