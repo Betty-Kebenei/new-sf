@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --open --hot",
-    "lint": "eslint src -c .eslintrc --ext js,jsx",
+    "lint": "eslint src/**/*.js src/**/*.jsx",
     "check-staged": "lint-staged"
   },
   "author": "",
@@ -44,10 +44,10 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": [
+    "src/**/*.{js,jsx}": [
       "eslint"
     ],
-    "*.{js,jsx,json,md}": [
+    "src/**/*.{js,jsx,json,md}": [
       "prettier --list-different"
     ]
   }
