@@ -1,7 +1,13 @@
-import React from "react";
-import "../../public/scss/global.scss";
+import React from 'react';
+import '../../public/scss/global.scss';
+
+import DirectionDeterminants from './DirectionDeterminants';
 
 const App = () => {
-  return <div>Hello</div>;
+  return (
+    <div className="hey">
+      <DirectionDeterminants />
+    </div>
+  );
 };
 export default App;

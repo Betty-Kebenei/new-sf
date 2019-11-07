@@ -1,4 +1,4 @@
-var path = require('path');
+const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
@@ -23,13 +23,7 @@ module.exports = {
                 loader: "style-loader"
               },
               {
-                loader: "css-loader",
-                options: {
-                  discardDuplicates: true,
-                  importLoaders: 1,
-                  modules: true,
-                  localIdentName: "[name]__[local]___[hash:base64:5]"
-                }
+                loader: "css-loader"
               },
               {
                 loader: 'sass-loader',
