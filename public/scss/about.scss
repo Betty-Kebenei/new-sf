@@ -1,0 +1,58 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &-general, &-who {
+    height: 400px;
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+  }
+
+  &-general {
+    letter-spacing: 0.1pc;
+    line-height: 30px;
+    padding: 40px;
+    background-color: $primary-red-color;
+    color: $primary-white-color;
+
+    p {
+      font-size: $title-size;
+    }
+
+    button {
+      display: block;
+      padding: 10px;
+      margin: 50px auto;
+      font-size: $body-size;
+    }
+
+    &-become-member {
+      color: $primary-white-color;
+      border: 2px solid $primary-white-color;
+      background-color: $primary-red-color;
+    }
+
+    &-support {
+      color: #000;
+      background-color: $primary-white-color;
+      border-radius: 15px;
+    }
+  }
+
+  &-who {
+    background-color: $primary-green-color;
+    color: $primary-white-color;
+
+    &-title {
+      font-size: $title-size;
+    }
+
+    &-body {
+      // font-size: $body-size;
+    }
+  }
+
+}
