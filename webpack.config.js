@@ -9,31 +9,44 @@ module.exports = {
     path: path.resolve(__dirname, 'public/dist')
   },
   module: {
-      rules: [
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loader: "babel-loader",
+        options: { presets: ["@babel/env"] }
+      },
+      {
+        test: /\.(css|scss)$/,
+        use: [
           {
-              test: /\.(js|jsx)$/,
-              exclude: /node_modules/,
-              loader: "babel-loader",
-              options: { presets: ["@babel/env"] }
+            loader: "style-loader"
           },
           {
-            test: /\.(css|scss)$/,
-            use: [
-              {
-                loader: "style-loader"
-              },
-              {
-                loader: "css-loader"
-              },
-              {
-                loader: 'sass-loader',
-                options: {
-                  sourceMap: true,
-                },
-              },
-            ]
-          }
-      ]
+            loader: "css-loader"
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+        ]
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true, // webpack@1.x
+              disable: true, // webpack@2.x and newer
+            },
+          },
+        ],
+      }
+    ]
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   devServer: {
