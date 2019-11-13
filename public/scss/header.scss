@@ -1,0 +1,27 @@
+.header {
+  box-sizing: border-box;
+  margin: 0;
+  height: 10vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: $primary-white-color;
+
+  &-menu {
+    padding-left: 30px;
+    flex: 2;
+  }
+
+  &-logo {
+    flex: 1;
+
+    img {
+      height: 50px;
+      width: 150px;
+    }
+
+  }
+}
