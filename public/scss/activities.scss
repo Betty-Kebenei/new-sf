@@ -1,0 +1,35 @@
+.activities {
+  &-title {
+    text-align: center;
+    background-color: #FFFAf1;
+
+    h2 {
+      margin: 0;
+      padding: 10px;
+    }
+  }
+
+  &-body {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    color: $primary-black-color;
+    padding: 20px;
+    align-items: center;
+
+    &-arrow {
+      background-color: rgba(243, 239, 239, 0.6);
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    &-activity {
+      width: 200px;
+      margin: 0 auto;
+      text-align: center;
+      background-color: rgba(243, 239, 239, 0.6);
+      border-radius: 5px;
+      padding: 10px;
+    }
+  }
+}
