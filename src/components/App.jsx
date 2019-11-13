@@ -3,7 +3,7 @@ import '../../public/scss/global.scss';
 
 import About from './About';
 import DirectionDeterminants from './DirectionDeterminants';
-import Activities from './Activities';
+import Activities from './activities/Activities';
 
 const App = () => {
   return (
