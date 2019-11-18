@@ -11,7 +11,7 @@ const DirectionDeterminants = () => {
     'Pellentesque habitant morbi tristique senectus et netus et malesuada' +
     ' fames ac turpis egestas.';
   return (
-    <div className="direction-determinants">
+    <div className="direction-determinants" id="mission">
       <div className="direction-determinants-mission">
         <h2>OUR MISSION</h2>
         <p>{mission}</p>

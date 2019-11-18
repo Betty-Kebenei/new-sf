@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+.page-body {
+  margin-top: 80px;
+}
+
 @import "variables";
 @import "header";
 @import "about";
