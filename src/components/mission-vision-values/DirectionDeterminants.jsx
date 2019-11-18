@@ -1,4 +1,7 @@
 import React from 'react';
+import missionIcon from '../../images/mission.png';
+import visionIcon from '../../images/vision.png';
+import valuesIcon from '../../images/values.png';
 
 const DirectionDeterminants = () => {
   const mission =
@@ -13,19 +16,22 @@ const DirectionDeterminants = () => {
   return (
     <div className="direction-determinants" id="mission">
       <div className="direction-determinants-mission">
+        <img src={missionIcon} alt="mission" />
         <h2>OUR MISSION</h2>
         <p>{mission}</p>
       </div>
       <div className="direction-determinants-vision">
+        <img src={visionIcon} alt="vision" />
         <h2>OUR VISION</h2>
         <p>{vision}</p>
       </div>
       <div className="direction-determinants-values">
+        <img src={valuesIcon} alt="values" />
         <h2>OUR CORE VALUES</h2>
         <ul>
-          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-          <li>Aliquam tincidunt mauris eu risus.</li>
-          <li>Vestibulum auctor dapibus neque.</li>
+          <li>i. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+          <li>ii. Aliquam tincidunt mauris eu risus.</li>
+          <li>iii. Vestibulum auctor dapibus neque.</li>
         </ul>
       </div>
     </div>
