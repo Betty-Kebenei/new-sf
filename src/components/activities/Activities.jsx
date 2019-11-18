@@ -27,7 +27,7 @@ const Activities = () => {
   };
 
   return (
-    <div className="activities" style={styles}>
+    <div className="activities" id="activities" style={styles}>
       <div className="activities-title">
         <h2>ACTIVITIES</h2>
       </div>

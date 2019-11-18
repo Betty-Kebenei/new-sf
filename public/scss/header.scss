@@ -1,27 +1,95 @@
 .header {
-  box-sizing: border-box;
+  position: relative;
   margin: 0;
-  height: 10vh;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  position: sticky;
-  top: 0;
-  background-color: $primary-white-color;
 
-  &-menu {
-    padding-left: 30px;
-    flex: 2;
-  }
+  &-section {
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    margin: 0;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 
-  &-logo {
-    flex: 1;
+    background-color: $primary-white-color;
 
-    img {
-      height: 50px;
-      width: 150px;
+    &-hamburger {
+      padding: 10px 0 0 30px;
+      flex: 2;
+
+      img {
+        height: 30px;
+        width: 50px;
+      }
     }
 
+    &-logo {
+      flex: 1;
+
+      img {
+        height: 50px;
+        width: 150px;
+      }
+    }
+  }
+
+  &-menu {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    z-index: 2;
+    background-color: $primary-black-color;
+    color: $primary-white-color;
+    display: none;
+
+    &-close {
+      padding: 10px 30px;
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        background-color: $primary-white-color;
+        border-radius: 50%;
+        padding: 5px;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+      }
+    }
+
+    &-items {
+      list-style-type: none;
+      margin: 15px 0 0 0;
+      padding: 0;
+
+      li {
+        padding: 5px 30px;
+        font-size: $body-size;
+        cursor: pointer;
+        border-top: 1px solid $primary-white-color;
+
+        a {
+          text-decoration: none;
+          color: $primary-white-color;
+        }
+      }
+
+      li:last-of-type {
+        border-bottom: 1px solid $primary-white-color;
+      }
+
+      li:hover {
+        background-color: $primary-green-color;
+      }
+    }
+  }
+
+  .active {
+    display: block;
+    position: fixed;
   }
 }
+
+

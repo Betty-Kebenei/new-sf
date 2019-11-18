@@ -17,7 +17,7 @@ const About = () => {
     'volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,' +
     'facilisis luctus, metus';
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="about-general">
         <p>
           <b>IMPACTING NATIONS</b> WITH THE
