@@ -5,6 +5,11 @@
   padding: 0 20px;
 
   &-mission, &-vision, &-values {
+    img {
+      height: 60px;
+      width: 60px;
+    }
+
     h2 {
       font-size: $title-size;
       text-decoration: underline;
@@ -15,7 +20,25 @@
 
     p, ul {
       font-size:  $body-size;
+
+      li {
+        list-style-type: none;
+      }
     }
 
+  }
+}
+
+
+@include windowSize($TabletPortrait){
+  .direction-determinants {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-mission, &-vision, &-values {
+      margin: 0 10px;
+      padding: 0 20px;
+      flex: 1;
+    }
   }
 }

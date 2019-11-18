@@ -4,8 +4,8 @@ import '../../public/scss/global.scss';
 import MenuContext from '../context/menu-context';
 
 import Header from './header/header';
-import About from './About';
-import DirectionDeterminants from './DirectionDeterminants';
+import About from './about/About';
+import DirectionDeterminants from './mission-vision-values/DirectionDeterminants';
 import Activities from './activities/Activities';
 
 const App = () => {

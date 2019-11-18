@@ -7,3 +7,23 @@ $primary-white-color: #fff;
 $primary-black-color: #000;
 $primary-green-color: #069706;
 $primary-red-color: #ce1d06;
+
+@mixin windowSize($query) {
+  @if $query == MobileOnly {
+    @media ( max-width: 600px ) { @content; }
+  } @else if $query == TabletPortrait {
+    @media ( min-width: 720px ) { @content; }
+  } @else if $query == TabletLandScape {
+    @media ( min-width: 900px ) { @content; }
+  } @else if $query == DesktopNormal {
+    @media ( min-width: 1200px ) { @content; }
+  } @else if $query == DesktopBig {
+    @media ( min-width: 1800px ) { @content; }
+  }
+}
+
+$MobileOnly: MobileOnly;
+$TabletPortrait: TabletPortrait;
+$TabletLandScape: TabletLandScape;
+$DesktopNormal: DesktopNormal;
+$DesktopBig: DesktopBig;
