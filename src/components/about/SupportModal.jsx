@@ -1,0 +1,122 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/label-has-associated-control */
+import React, { useState } from 'react';
+import closeIcon from '../../images/cancel.svg';
+
+const SupportModal = ({ isOpen, openAndCloeSupportModal }) => {
+  const [formValues, setFormValues] = useState({
+    firstname: '',
+    lastname: '',
+    email: '',
+    phonenumber: '',
+    frequency: '',
+  });
+
+  const handleChange = event => {
+    const updatedFormValues = [...formValues];
+    updatedFormValues[event.target.name] = event.target.value;
+    setFormValues(updatedFormValues);
+  };
+
+  const handleSubmit = event => {
+    event.preventDEfault();
+    console.log('submiting');
+  };
+
+  console.log(isOpen);
+
+  return (
+    <div className="support-modal">
+      <div className="support-modal-close-icon">
+        <img
+          src={closeIcon}
+          alt="close icon"
+          onClick={() => openAndCloeSupportModal()}
+        />
+      </div>
+      <h2>Ways in which you could support:</h2>
+      <h3>A. Through prayer</h3>
+      <form className="support-modal-form" onSubmit={handleSubmit}>
+        <p>Fill this form if you wish to support through prayer</p>
+        <div className="support-modal-form-group-field">
+          <div className="support-modal-form-group-field-label">
+            <label htmlFor="firstname">Firstname</label>
+          </div>
+          <div className="support-modal-form-group-field-input">
+            <input
+              id="firstname"
+              type="text"
+              value={formValues.firstname}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+        <div className="support-modal-form-group-field">
+          <div className="support-modal-form-group-field-label">
+            <label htmlFor="lastname">Lastname</label>
+          </div>
+          <div className="support-modal-form-group-field-input">
+            <input
+              id="htmlFor"
+              type="text"
+              value={formValues.lastname}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+        <div className="support-modal-form-group-field">
+          <div className="support-modal-form-group-field-label">
+            <label htmlFor="email">Email</label>
+          </div>
+          <div className="support-modal-form-group-field-input">
+            <input
+              id="email"
+              type="email"
+              value={formValues.email}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+        <div className="support-modal-form-group-field">
+          <div className="support-modal-form-group-field-label">
+            <label htmlFor="phonenumber">Phone Number</label>
+          </div>
+          <div className="support-modal-form-group-field-input">
+            <input
+              id="phonenumber"
+              type="text"
+              value={formValues.phonenumber}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+        <div className="support-modal-form-select-field">
+          <div>
+            <label htmlFor="firstname">
+              How frequently would you like to receive prayer items?
+            </label>
+          </div>
+          <div className="support-modal-form-select-field-select">
+            <select id="frequency">
+              <option value="daily">Daily</option>
+              <option value="weekly">Weekly</option>
+              <option value="monthly">Monthly</option>
+            </select>
+          </div>
+        </div>
+        <input
+          className="support-modal-form-submit-button"
+          type="submit"
+          value="SUBMIT"
+        />
+      </form>
+
+      <h3>B. Through financial giving</h3>
+      <p>You could give your contribution via;</p>
+      <p>our M-pesa number: +254746</p>
+    </div>
+  );
+};
+export default SupportModal;
