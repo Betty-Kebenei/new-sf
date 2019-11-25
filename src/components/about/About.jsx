@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Modal from 'react-modal';
 import SupportModal from './SupportModal';
 
 const About = () => {
@@ -6,6 +7,17 @@ const About = () => {
 
   const openAndCloeSupportModal = () => {
     setIsOpen(!isOpen);
+  };
+
+  const customStyles = {
+    content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)',
+    },
   };
 
   const dummyAbout =
@@ -50,15 +62,19 @@ const About = () => {
           <p className="about-who-body">{dummyAbout}</p>
         </div>
       </div>
-      <SupportModal isOpen={isOpen} openAndCloeSupportModal={openAndCloeSupportModal} />
 
-      {/* <div className="support-modal">
-        <h2>Ways in which you could support:</h2>
-        <h3>Through prayer</h3>
-        <h3>Through financial giving</h3>
-        <p>You could give your contribution via;</p>
-        <p>our M-pesa number: +254746</p>
-      </div> */}
+      <Modal
+        ariaHideApp={false}
+        isOpen={isOpen}
+        onRequestClose={() => openAndCloeSupportModal()}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <SupportModal
+          isOpen={isOpen}
+          openAndCloeSupportModal={openAndCloeSupportModal}
+        />
+      </Modal>
     </div>
   );
 };
