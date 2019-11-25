@@ -25,8 +25,6 @@ const SupportModal = ({ isOpen, openAndCloeSupportModal }) => {
     console.log('submiting');
   };
 
-  console.log(isOpen);
-
   return (
     <div className="support-modal">
       <div className="support-modal-close-icon">
@@ -36,7 +34,7 @@ const SupportModal = ({ isOpen, openAndCloeSupportModal }) => {
           onClick={() => openAndCloeSupportModal()}
         />
       </div>
-      <h2>Ways in which you could support:</h2>
+      <h2>Ways in which you can support:</h2>
       <h3>A. Through prayer</h3>
       <form className="support-modal-form" onSubmit={handleSubmit}>
         <p>Fill this form if you wish to support through prayer</p>
