@@ -3,6 +3,7 @@
   flex-direction: column;
   text-align: center;
   background-color: rgb(235, 230, 225);
+  margin: 20px 0;
 
   &-general, &-who {
     box-sizing: border-box;
@@ -11,7 +12,6 @@
     border-radius: 50px;
     border: 1px solid gray;
     margin: 10px;
-    width: 350px;
   }
 
   &-general {
@@ -52,10 +52,6 @@
     &-title {
       font-size: $title-size;
     }
-
-    &-body {
-      // font-size: $body-size;
-    }
   }
 }
 
@@ -69,10 +65,5 @@
       width: 500px;
 
     }
-
-    &-general {
-      padding-right: 0;
-    }
-
   }
 }

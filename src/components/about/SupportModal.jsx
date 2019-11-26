@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
@@ -5,7 +6,7 @@
 import React, { useState } from 'react';
 import closeIcon from '../../images/cancel.svg';
 
-const SupportModal = ({ isOpen, openAndCloeSupportModal }) => {
+const SupportModal = ({ openAndCloseSupportModal }) => {
   const [formValues, setFormValues] = useState({
     firstname: '',
     lastname: '',
@@ -26,23 +27,23 @@ const SupportModal = ({ isOpen, openAndCloeSupportModal }) => {
   };
 
   return (
-    <div className="support-modal">
-      <div className="support-modal-close-icon">
+    <div className="about-modal">
+      <div className="about-modal-close-icon">
         <img
           src={closeIcon}
           alt="close icon"
-          onClick={() => openAndCloeSupportModal()}
+          onClick={() => openAndCloseSupportModal()}
         />
       </div>
       <h2>Ways in which you can support:</h2>
       <h3>A. Through prayer</h3>
-      <form className="support-modal-form" onSubmit={handleSubmit}>
+      <form className="about-modal-form" onSubmit={handleSubmit}>
         <p>Fill this form if you wish to support through prayer</p>
-        <div className="support-modal-form-group-field">
-          <div className="support-modal-form-group-field-label">
+        <div className="about-modal-form-group-field">
+          <div className="about-modal-form-group-field-label">
             <label htmlFor="firstname">Firstname</label>
           </div>
-          <div className="support-modal-form-group-field-input">
+          <div className="about-modal-form-group-field-input">
             <input
               id="firstname"
               type="text"
@@ -51,11 +52,11 @@ const SupportModal = ({ isOpen, openAndCloeSupportModal }) => {
             />
           </div>
         </div>
-        <div className="support-modal-form-group-field">
-          <div className="support-modal-form-group-field-label">
+        <div className="about-modal-form-group-field">
+          <div className="about-modal-form-group-field-label">
             <label htmlFor="lastname">Lastname</label>
           </div>
-          <div className="support-modal-form-group-field-input">
+          <div className="about-modal-form-group-field-input">
             <input
               id="htmlFor"
               type="text"
@@ -64,11 +65,11 @@ const SupportModal = ({ isOpen, openAndCloeSupportModal }) => {
             />
           </div>
         </div>
-        <div className="support-modal-form-group-field">
-          <div className="support-modal-form-group-field-label">
+        <div className="about-modal-form-group-field">
+          <div className="about-modal-form-group-field-label">
             <label htmlFor="email">Email</label>
           </div>
-          <div className="support-modal-form-group-field-input">
+          <div className="about-modal-form-group-field-input">
             <input
               id="email"
               type="email"
@@ -77,11 +78,11 @@ const SupportModal = ({ isOpen, openAndCloeSupportModal }) => {
             />
           </div>
         </div>
-        <div className="support-modal-form-group-field">
-          <div className="support-modal-form-group-field-label">
+        <div className="about-modal-form-group-field">
+          <div className="about-modal-form-group-field-label">
             <label htmlFor="phonenumber">Phone Number</label>
           </div>
-          <div className="support-modal-form-group-field-input">
+          <div className="about-modal-form-group-field-input">
             <input
               id="phonenumber"
               type="text"
@@ -90,13 +91,13 @@ const SupportModal = ({ isOpen, openAndCloeSupportModal }) => {
             />
           </div>
         </div>
-        <div className="support-modal-form-select-field">
+        <div className="about-modal-form-select-field">
           <div>
             <label htmlFor="firstname">
               How frequently would you like to receive prayer items?
             </label>
           </div>
-          <div className="support-modal-form-select-field-select">
+          <div className="about-modal-form-select-field-select">
             <select id="frequency">
               <option value="daily">Daily</option>
               <option value="weekly">Weekly</option>
@@ -105,7 +106,7 @@ const SupportModal = ({ isOpen, openAndCloeSupportModal }) => {
           </div>
         </div>
         <input
-          className="support-modal-form-submit-button"
+          className="about-modal-form-submit-button"
           type="submit"
           value="SUBMIT"
         />
