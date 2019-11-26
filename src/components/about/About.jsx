@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import SupportModal from './SupportModal';
+import MembershipModal from './MembershipModal';
 
 const About = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isSupportModalOpen, setIsSupportModalOpen] = useState(false);
+  const [isMembershipModalOpen, setIsMembershipModalOpen] = useState(false);
 
-  const openAndCloeSupportModal = () => {
-    setIsOpen(!isOpen);
+  const openAndCloseSupportModal = () => {
+    setIsSupportModalOpen(!isSupportModalOpen);
+  };
+
+  const openAndCloseMembershipModal = () => {
+    setIsMembershipModalOpen(!isMembershipModalOpen);
   };
 
   const customStyles = {
@@ -45,14 +51,18 @@ const About = () => {
             <b> PARTNERING</b> WITH
             <b> MISSIONARIES</b>
           </p>
-          <button type="button" className="about-general-become-member">
+          <button
+            type="button"
+            className="about-general-become-member"
+            onClick={() => openAndCloseMembershipModal()}
+          >
             <span>Become a member</span>
             <span> +</span>
           </button>
           <button
             type="button"
             className="about-general-support"
-            onClick={() => openAndCloeSupportModal()}
+            onClick={() => openAndCloseSupportModal()}
           >
             <b>SUPPORT</b>
           </button>
@@ -65,14 +75,27 @@ const About = () => {
 
       <Modal
         ariaHideApp={false}
-        isOpen={isOpen}
-        onRequestClose={() => openAndCloeSupportModal()}
+        isOpen={isSupportModalOpen}
+        onRequestClose={() => openAndCloseSupportModal()}
         style={customStyles}
         contentLabel="Example Modal"
       >
         <SupportModal
-          isOpen={isOpen}
-          openAndCloeSupportModal={openAndCloeSupportModal}
+          isOpen={isSupportModalOpen}
+          openAndCloseSupportModal={openAndCloseSupportModal}
+        />
+      </Modal>
+
+      <Modal
+        ariaHideApp={false}
+        isOpen={isMembershipModalOpen}
+        onRequestClose={() => openAndCloseMembershipModal()}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <MembershipModal
+          isOpen={isMembershipModalOpen}
+          openAndCloseMembershipModal={openAndCloseMembershipModal}
         />
       </Modal>
     </div>
