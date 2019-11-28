@@ -4,7 +4,11 @@ body {
 }
 
 .page-body {
-  margin-top: 80px;
+  margin-top: 80px 0 0 0;
+}
+
+.page-footer {
+  margin: 0;
 }
 
 @import "variables";
@@ -13,3 +17,4 @@ body {
 @import "aboutModal";
 @import "directionDeterminants";
 @import "activities";
+@import "footer";

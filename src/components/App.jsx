@@ -7,6 +7,7 @@ import Header from './header/header';
 import About from './about/About';
 import DirectionDeterminants from './mission-vision-values/DirectionDeterminants';
 import Activities from './activities/Activities';
+import Footer from './footer/Footer';
 
 const App = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -29,6 +30,9 @@ const App = () => {
         <About />
         <DirectionDeterminants />
         <Activities />
+      </div>
+      <div className="page-footer">
+        <Footer />
       </div>
     </MenuContext.Provider>
   );

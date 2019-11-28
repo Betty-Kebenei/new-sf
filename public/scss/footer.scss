@@ -1,0 +1,14 @@
+.footer {
+  background-color: rgb(39, 30, 30);
+  color: $primary-white-color;
+  margin: 0;
+  padding: 20px;
+
+  &-contacts {
+    text-align: right;
+
+    ul {
+      list-style: none;
+    }
+  }
+}

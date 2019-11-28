@@ -33,9 +33,6 @@ const Menu = ({ openMenu, openAndCloseMenu }) => {
         <li onClick={() => openAndCloseMenu(false)}>
           <a href="#contacts">Contacts</a>
         </li>
-        <li onClick={() => openAndCloseMenu(false)}>
-          <a href="#join">How to join</a>
-        </li>
       </ul>
     </div>
   );
