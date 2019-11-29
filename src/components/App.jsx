@@ -27,6 +27,7 @@ const App = () => {
         <Header />
       </div>
       <div className="page-body">
+        <div className="page-body-image" />
         <About />
         <DirectionDeterminants />
         <Activities />
