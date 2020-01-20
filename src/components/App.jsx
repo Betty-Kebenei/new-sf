@@ -4,6 +4,7 @@ import '../../public/scss/global.scss';
 import MenuContext from '../context/menu-context';
 
 import Header from './header/header';
+import Quotes from './quotes/Quotes';
 import About from './about/About';
 import DirectionDeterminants from './mission-vision-values/DirectionDeterminants';
 import Activities from './activities/Activities';
@@ -27,7 +28,7 @@ const App = () => {
         <Header />
       </div>
       <div className="page-body">
-        <div className="page-body-image" />
+        <Quotes />
         <About />
         <DirectionDeterminants />
         <Activities />

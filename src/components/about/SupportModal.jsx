@@ -114,7 +114,7 @@ const SupportModal = ({ openAndCloseSupportModal }) => {
 
       <h3>B. Through financial giving</h3>
       <p>You could give your contribution via;</p>
-      <p>our M-pesa number: +254746</p>
+      <p>our M-pesa Paybill: </p>
     </div>
   );
 };
