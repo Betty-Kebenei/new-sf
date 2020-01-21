@@ -91,25 +91,19 @@ const SupportModal = ({ openAndCloseSupportModal }) => {
             />
           </div>
         </div>
-        <div className="about-modal-form-select-field">
-          <div>
-            <label htmlFor="firstname">
-              How frequently would you like to receive prayer items?
-            </label>
+        <div className="about-modal-form-group-field">
+          <div className="about-modal-form-group-field-label">
+            <label htmlFor="firstname">Frequency</label>
           </div>
-          <div className="about-modal-form-select-field-select">
-            <select id="frequency">
-              <option value="daily">Daily</option>
-              <option value="weekly">Weekly</option>
-              <option value="monthly">Monthly</option>
-            </select>
+          <div className="about-modal-form-group-field-radio">
+            <input type="radio" name="frequency" value="daily" /> Daily
+            <input type="radio" name="frequency" value="weekly" /> Weekly
+            <input type="radio" name="frequency" value="monthly" /> Monthly
           </div>
         </div>
-        <input
-          className="about-modal-form-submit-button"
-          type="submit"
-          value="SUBMIT"
-        />
+        <div className="about-modal-form-submit-button">
+          <input type="submit" value="SUBMIT" />
+        </div>
       </form>
 
       <h3>B. Through financial giving</h3>
