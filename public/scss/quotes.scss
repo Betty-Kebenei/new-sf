@@ -3,10 +3,12 @@
   position: relative;
   overflow: hidden;
   z-index: -2;
+  margin-top: 10vh;
 
   img {
     vertical-align: middle;
     background-position-x: right;
+    width: 100%;
   }
 
   &-section {
@@ -22,43 +24,21 @@
 
     p {
       position: relative;
-      width: 70%;
+      width: 80%;
       margin: auto;
-      font-size: $title-size;
-      font-weight: bold;
+      font-size: 15px;
       overflow: hidden;
-      white-space: nowrap;
-      animation-name: typing;
-      animation-duration: 10s;
-      animation-timing-function: steps(25, end);
-      animation-iteration-count: infinite;
     }
+  }
+}
 
-    p:after {
-      content: "|";
-      position: absolute;
-      right: 0;
-      animation-name: caret;
-      animation-duration: 1s;
-      animation-timing-function: steps(1, end);
-      animation-iteration-count: infinite;
-    }
+@include windowSize($TabletSmall){
+  .quotes {
+    margin-top: 0;
 
-    @keyframes typing {
-      0%, 100% {
-        width: 0%;
-      }
-      20%, 80% {
-        width: 100%;
-      }
-    }
-
-    @keyframes caret {
-      0%, 100% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
+    &-section {
+      p {
+        font-size: $title-size;
       }
     }
   }

@@ -1,7 +1,6 @@
 $title-size: 22px;
 $body-size: 20px;
 $primary-font:  Helvetica, sans-serif;
-// $primary-body-font:
 
 $primary-white-color: #fff;
 $primary-black-color: #000;
@@ -11,6 +10,8 @@ $primary-red-color: #ce1d06;
 @mixin windowSize($query) {
   @if $query == MobileOnly {
     @media ( max-width: 600px ) { @content; }
+  } @else if $query == TabletSmall {
+    @media ( min-width: 600px ) { @content; }
   } @else if $query == TabletPortrait {
     @media ( min-width: 720px ) { @content; }
   } @else if $query == TabletLandScape {
@@ -23,6 +24,7 @@ $primary-red-color: #ce1d06;
 }
 
 $MobileOnly: MobileOnly;
+$TabletSmall: TabletSmall;
 $TabletPortrait: TabletPortrait;
 $TabletLandScape: TabletLandScape;
 $DesktopNormal: DesktopNormal;
