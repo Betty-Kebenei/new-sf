@@ -7,6 +7,7 @@ import Header from './header/header';
 import Quotes from './quotes/Quotes';
 import About from './about/About';
 import DirectionDeterminants from './mission-vision-values/DirectionDeterminants';
+import Leadership from './leadership/Leadership';
 import Activities from './activities/Activities';
 import Footer from './footer/Footer';
 
@@ -31,6 +32,7 @@ const App = () => {
         <Quotes />
         <About />
         <DirectionDeterminants />
+        <Leadership />
         <Activities />
       </div>
       <div className="page-footer">

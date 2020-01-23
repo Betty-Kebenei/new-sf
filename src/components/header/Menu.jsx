@@ -22,6 +22,9 @@ const Menu = ({ openMenu, openAndCloseMenu }) => {
           <a href="#mission">Mission, Vision and Values</a>
         </li>
         <li onClick={() => openAndCloseMenu(false)}>
+          <a href="#leadership">Leadership</a>
+        </li>
+        <li onClick={() => openAndCloseMenu(false)}>
           <a href="#activities">Activities</a>
         </li>
         <li onClick={() => openAndCloseMenu(false)}>

@@ -1,0 +1,38 @@
+.leadership {
+  padding: 20 !important;
+
+  h1 {
+    text-align: center;
+    background-color: rgb(235, 230, 225);
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  &-leader {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    margin: 0;
+    background-color: rgb(235, 230, 225);
+    border-bottom: 1px solid $primary-white-color;
+
+    &-section1 {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      h2 {
+        align-self: center;
+      }
+
+    }
+
+    &-section2 {
+      flex: 2;
+    }
+  }
+
+  &-leader:first-of-type {
+    border-top: 1px solid $primary-white-color;
+  }
+}
