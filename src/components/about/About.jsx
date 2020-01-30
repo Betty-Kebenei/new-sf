@@ -27,20 +27,9 @@ const About = () => {
   };
 
   const dummyAbout =
-    'Pellentesque habitant morbi tristique senectus et netus' +
-    'et malesuada fames ac turpis egestas. Vestibulum tortor' +
-    'quam, feugiat vitae, ultricies eget, tempor sit amet, ante. ' +
-    'Donec eu libero sit amet quam egestas semper. Aenean ultricies ' +
-    'mi vitae est. Mauris placerat eleifend leo. Quisque sit amet ' +
-    'est et sapien ullamcorper pharetra. Vestibulum erat wisi, ' +
-    'condimentum sed, commodo vitae, ornare sit amet, wisi. ' +
-    'Aenean fermentum, elit eget tincidunt condimentum, ' +
-    'eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.' +
-    'Donec non enim in turpis pulvinar facilisis. Ut felis. ' +
-    'Praesent dapibus, neque id cursus faucibus, tortor neque ' +
-    'egestas augue, eu vulputate magna eros eu erat. Aliquam erat ' +
-    'volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,' +
-    'facilisis luctus, metus';
+    'A group of like-minded individuals who have joined to ' +
+    'create synergy through our various skills, giftings and ' +
+    'talents to see how best we can live out our calling of sending.';
   return (
     <div id="about">
       <div className="about">
@@ -70,6 +59,20 @@ const About = () => {
         <div className="about-who">
           <p className="about-who-title">Who are we...</p>
           <p className="about-who-body">{dummyAbout}</p>
+          <br />
+          <br />
+          <p>
+            <b>Dare to be a Daniel!</b>
+          </p>
+          <p>
+            <b>Dare to stand alone!</b>
+          </p>
+          <p>
+            <b>Dare to have a purpose firm!</b>
+          </p>
+          <p>
+            <b>Dare to make it known!</b>
+          </p>
         </div>
       </div>
 
