@@ -27,12 +27,13 @@ const Menu = ({ openMenu, openAndCloseMenu }) => {
         <li onClick={() => openAndCloseMenu(false)}>
           <a href="#activities">Activities</a>
         </li>
-        <li onClick={() => openAndCloseMenu(false)}>
+        {/* TODO */}
+        {/* <li onClick={() => openAndCloseMenu(false)}>
           <a href="#achievements">Achievements</a>
         </li>
         <li onClick={() => openAndCloseMenu(false)}>
           <a href="#goals">Goals</a>
-        </li>
+        </li> */}
         <li onClick={() => openAndCloseMenu(false)}>
           <a href="#contacts">Contacts</a>
         </li>
