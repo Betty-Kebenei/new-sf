@@ -46,7 +46,13 @@ const MembershipModal = ({ openAndCloseMembershipModal }) => {
 
         <h3>How to become a member:</h3>
         <ol>
-          <li>Fill the membership form.</li>
+          <li>
+            Fill the membership{' '}
+            <a href="https://docs.google.com/forms/d/1ahkKQ6u6zk6fqz2UxT6fvUUa6lYgwmTZBSO33bUXL7U/viewform?edit_requested=true">
+              form
+            </a>
+            .
+          </li>
           <li>Wait for review and feedback.</li>
         </ol>
 
