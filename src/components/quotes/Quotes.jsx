@@ -26,6 +26,54 @@ const Quotes = () => {
           <p>{allQuotes[1]}</p>
         </div>
       </div>
+      <div>
+        <img src={sendMePic} alt="send me" />
+        <div className="quotes-section">
+          <p>{allQuotes[2]}</p>
+        </div>
+      </div>
+      <div>
+        <img src={sendMePic} alt="send me" />
+        <div className="quotes-section">
+          <p>{allQuotes[3]}</p>
+        </div>
+      </div>
+      <div>
+        <img src={sendMePic} alt="send me" />
+        <div className="quotes-section">
+          <p>{allQuotes[4]}</p>
+        </div>
+      </div>
+      <div>
+        <img src={sendMePic} alt="send me" />
+        <div className="quotes-section">
+          <p>{allQuotes[5]}</p>
+        </div>
+      </div>
+      <div>
+        <img src={sendMePic} alt="send me" />
+        <div className="quotes-section">
+          <p>{allQuotes[6]}</p>
+        </div>
+      </div>
+      <div>
+        <img src={sendMePic} alt="send me" />
+        <div className="quotes-section">
+          <p>{allQuotes[7]}</p>
+        </div>
+      </div>
+      <div>
+        <img src={sendMePic} alt="send me" />
+        <div className="quotes-section">
+          <p>{allQuotes[8]}</p>
+        </div>
+      </div>
+      <div>
+        <img src={sendMePic} alt="send me" />
+        <div className="quotes-section">
+          <p>{allQuotes[9]}</p>
+        </div>
+      </div>
     </Carousel>
   );
 };
