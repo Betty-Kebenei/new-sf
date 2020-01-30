@@ -10,7 +10,6 @@
 
   &-leader {
     display: flex;
-    flex-direction: row;
     padding: 10px 20px;
     margin: 0;
     background-color: rgb(235, 230, 225);
@@ -32,7 +31,21 @@
     }
   }
 
+  .odd {
+    flex-direction: column;
+  }
+
+  .even {
+    flex-direction: column-reverse;
+  }
+
   &-leader:first-of-type {
     border-top: 1px solid $primary-white-color;
+  }
+
+  @include windowSize($TabletPortrait){
+    .even, .odd {
+      flex-direction: row;
+    }
   }
 }

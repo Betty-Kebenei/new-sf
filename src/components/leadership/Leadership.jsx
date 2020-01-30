@@ -4,7 +4,7 @@ const Leadership = () => {
   return (
     <div className="leadership" id="leadership">
       <h1>LEADERSHIP</h1>
-      <div className="leadership-leader">
+      <div className="leadership-leader odd">
         <div className="leadership-leader-section1">
           <h2>Chairperson</h2>
         </div>
@@ -23,7 +23,7 @@ const Leadership = () => {
           </ul>
         </div>
       </div>
-      <div className="leadership-leader">
+      <div className="leadership-leader even">
         <div className="leadership-leader-section2">
           <ul>
             <li>Co-ordinate all group events and meetings</li>
@@ -36,7 +36,7 @@ const Leadership = () => {
           <h2>Organizing Secretary/Secretary</h2>
         </div>
       </div>
-      <div className="leadership-leader">
+      <div className="leadership-leader odd">
         <div className="leadership-leader-section1">
           <h2>Treasurer</h2>
         </div>
@@ -58,7 +58,7 @@ const Leadership = () => {
           </ul>
         </div>
       </div>
-      <div className="leadership-leader">
+      <div className="leadership-leader even">
         <div className="leadership-leader-section2">
           <ul>
             <li>
@@ -82,7 +82,7 @@ const Leadership = () => {
           <h2>Prayer Co-ordinator</h2>
         </div>
       </div>
-      <div className="leadership-leader">
+      <div className="leadership-leader odd">
         <div className="leadership-leader-section1">
           <h2>Projects Co-ordinator</h2>
         </div>
@@ -98,7 +98,7 @@ const Leadership = () => {
           </ul>
         </div>
       </div>
-      <div className="leadership-leader">
+      <div className="leadership-leader even">
         <div className="leadership-leader-section2">
           <ul>
             <li>Develop accountability partners</li>
@@ -116,7 +116,7 @@ const Leadership = () => {
           <h2>Follow-up Co-ordinator</h2>
         </div>
       </div>
-      <div className="leadership-leader">
+      <div className="leadership-leader odd">
         <div className="leadership-leader-section1">
           <h2>Literature Co-ordinator</h2>
         </div>
