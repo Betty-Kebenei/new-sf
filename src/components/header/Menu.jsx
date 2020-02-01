@@ -2,14 +2,13 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
-import close from '../../images/cancel.svg';
 
 const Menu = ({ openMenu, openAndCloseMenu }) => {
   return (
     <div className={`header-menu ${openMenu ? 'active' : ''}`}>
       <div className="header-menu-close">
         <img
-          src={close}
+          src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564413/cancel_eagwim.svg"
           alt="close icon"
           onClick={() => openAndCloseMenu(false)}
         />

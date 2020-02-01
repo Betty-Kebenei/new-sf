@@ -1,9 +1,4 @@
 import React from 'react';
-import missionIcon from '../../images/mission.png';
-import visionIcon from '../../images/vision.png';
-import valuesIcon from '../../images/values.png';
-import verseIcon from '../../images/verse.png';
-import objectivesIcon from '../../images/objectives.png';
 
 const DirectionDeterminants = () => {
   const mission =
@@ -22,22 +17,22 @@ const DirectionDeterminants = () => {
   return (
     <div className="direction-determinants" id="mission">
       <div className="direction-determinants-mission">
-        <img src={missionIcon} alt="mission" />
+        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564400/mission_udpxro.png" alt="mission" />
         <h2>OUR MISSION</h2>
         <p>{mission}</p>
       </div>
       <div className="direction-determinants-vision">
-        <img src={visionIcon} alt="vision" />
+        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564407/vision_kgvjzf.png" alt="vision" />
         <h2>OUR VISION</h2>
         <p>{vision}</p>
       </div>
       <div className="direction-determinants-verse">
-        <img src={verseIcon} alt="vision" />
+        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564409/verse_hgctfj.png" alt="vision" />
         <h2>OUR THEME VERSE</h2>
         <p>{verse}</p>
       </div>
       <div className="direction-determinants-values">
-        <img src={valuesIcon} alt="verse" />
+        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564420/values_dfxvq2.png" alt="verse" />
         <h2>OUR CORE VALUES</h2>
         <ul>
           <li>i. Faith in Jesus Christ.</li>
@@ -46,7 +41,7 @@ const DirectionDeterminants = () => {
         </ul>
       </div>
       <div className="direction-determinants-objectives">
-        <img src={objectivesIcon} alt="objectives" />
+        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564404/objectives_rqwyff.png" alt="objectives" />
         <h2>OUR OBJECTIVES</h2>
         <ul>
           <li>i. Be accountable to other people called to the marketplace.</li>

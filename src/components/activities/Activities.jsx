@@ -1,11 +1,4 @@
 import React from 'react';
-import meetingPic from '../../images/meeting-pic.jpeg';
-import financialPic from '../../images/financial-pic.jpeg';
-import logisticsPic from '../../images/logistics-pic.jpeg';
-import moralPic from '../../images/moral-pic.jpg';
-import prayerPic from '../../images/prayer-pic.jpg';
-import reEntryPic from '../../images/re-entry-pic.jpeg';
-import visitsPic from '../../images/visits-pic.jpeg';
 
 const Activities = () => {
   return (
@@ -17,7 +10,7 @@ const Activities = () => {
         <div className="activity-card">
           <div className="activity-card-inner">
             <div className="activity-card-front">
-              <img src={meetingPic} alt="Avatar" />
+              <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564407/meeting-pic_v6tf9y.jpg" alt="Avatar" />
             </div>
             <div className="activity-card-back">
               <h2>Monthly meetings</h2>
@@ -32,7 +25,7 @@ const Activities = () => {
         <div className="activity-card">
           <div className="activity-card-inner">
             <div className="activity-card-front">
-              <img src={financialPic} alt="Avatar" />
+              <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564385/financial-pic_lspzuy.jpg" alt="Avatar" />
             </div>
             <div className="activity-card-back">
               <h2>Monthly financially contributions</h2>
@@ -47,7 +40,7 @@ const Activities = () => {
         <div className="activity-card">
           <div className="activity-card-inner">
             <div className="activity-card-front">
-              <img src={logisticsPic} alt="Avatar" />
+              <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564394/logistics-pic_soqfkd.jpg" alt="Avatar" />
             </div>
             <div className="activity-card-back">
               <h2>Missionary logistics support</h2>
@@ -62,7 +55,7 @@ const Activities = () => {
         <div className="activity-card">
           <div className="activity-card-inner">
             <div className="activity-card-front">
-              <img src={moralPic} alt="Avatar" />
+              <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564406/moral-pic_pr30vd.jpg" alt="Avatar" />
             </div>
             <div className="activity-card-back">
               <h2>Missionary moral support</h2>
@@ -77,7 +70,7 @@ const Activities = () => {
         <div className="activity-card">
           <div className="activity-card-inner">
             <div className="activity-card-front">
-              <img src={prayerPic} alt="Avatar" />
+              <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564410/prayer-pic_mydcom.jpg" alt="Avatar" />
             </div>
             <div className="activity-card-back">
               <h2>Weekly prayer and fasting</h2>
@@ -92,7 +85,7 @@ const Activities = () => {
         <div className="activity-card">
           <div className="activity-card-inner">
             <div className="activity-card-front">
-              <img src={reEntryPic} alt="Avatar" />
+              <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564405/re-entry-pic_e2ii7f.jpg" alt="Avatar" />
             </div>
             <div className="activity-card-back">
               <h2>Missionary re-entry support</h2>
@@ -110,7 +103,7 @@ const Activities = () => {
         <div className="activity-card">
           <div className="activity-card-inner">
             <div className="activity-card-front">
-              <img src={visitsPic} alt="Avatar" />
+              <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564418/visits-pic_sqdp8r.jpg" alt="Avatar" />
             </div>
             <div className="activity-card-back">
               <h2>Missionary visits</h2>

@@ -4,14 +4,13 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
-import closeIcon from '../../images/cancel.svg';
 
 const MembershipModal = ({ openAndCloseMembershipModal }) => {
   return (
     <div className="about-modal">
       <div className="about-modal-close-icon">
         <img
-          src={closeIcon}
+          src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564413/cancel_eagwim.svg"
           alt="close icon"
           onClick={() => openAndCloseMembershipModal()}
         />
