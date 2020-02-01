@@ -39,6 +39,9 @@ module.exports = {
       }
     ]
   },
+  performance: {
+    maxAssetSize: 1000000
+  },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   devServer: {
     contentBase: path.resolve(__dirname, 'public'),
