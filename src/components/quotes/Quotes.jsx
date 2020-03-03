@@ -4,6 +4,16 @@ import { Carousel } from 'react-responsive-carousel';
 import allQuotes from './QuotesArray';
 
 const Quotes = () => {
+  const renderQuotes = allQuotes.map(quote => {
+    return (
+      <div key={quote}>
+        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564421/send-me_dwciad.jpg" alt="send me" />
+        <div className="quotes-section">
+          <p>{quote}</p>
+        </div>
+      </div>
+    );
+  });
   return (
     <Carousel
       className="quotes"
@@ -13,66 +23,7 @@ const Quotes = () => {
       infiniteLoop
       autoPlay
     >
-      <div>
-        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564421/send-me_dwciad.jpg" alt="send me" />
-        <div className="quotes-section">
-          <p>{allQuotes[0]}</p>
-        </div>
-      </div>
-      <div>
-        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564421/send-me_dwciad.jpg" alt="send me" />
-        <div className="quotes-section">
-          <p>{allQuotes[1]}</p>
-        </div>
-      </div>
-      <div>
-        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564421/send-me_dwciad.jpg" alt="send me" />
-        <div className="quotes-section">
-          <p>{allQuotes[2]}</p>
-        </div>
-      </div>
-      <div>
-        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564421/send-me_dwciad.jpg" alt="send me" />
-        <div className="quotes-section">
-          <p>{allQuotes[3]}</p>
-        </div>
-      </div>
-      <div>
-        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564421/send-me_dwciad.jpg" alt="send me" />
-        <div className="quotes-section">
-          <p>{allQuotes[4]}</p>
-        </div>
-      </div>
-      <div>
-        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564421/send-me_dwciad.jpg" alt="send me" />
-        <div className="quotes-section">
-          <p>{allQuotes[5]}</p>
-        </div>
-      </div>
-      <div>
-        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564421/send-me_dwciad.jpg" alt="send me" />
-        <div className="quotes-section">
-          <p>{allQuotes[6]}</p>
-        </div>
-      </div>
-      <div>
-        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564421/send-me_dwciad.jpg" alt="send me" />
-        <div className="quotes-section">
-          <p>{allQuotes[7]}</p>
-        </div>
-      </div>
-      <div>
-        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564421/send-me_dwciad.jpg" alt="send me" />
-        <div className="quotes-section">
-          <p>{allQuotes[8]}</p>
-        </div>
-      </div>
-      <div>
-        <img src="https://res.cloudinary.com/dkp2ocmaw/image/upload/v1580564421/send-me_dwciad.jpg" alt="send me" />
-        <div className="quotes-section">
-          <p>{allQuotes[9]}</p>
-        </div>
-      </div>
+      {renderQuotes}
     </Carousel>
   );
 };
